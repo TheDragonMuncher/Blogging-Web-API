@@ -19,7 +19,7 @@ public class CommentsController : ControllerBase
 
     // GET: /api/comments
     [HttpGet]
-    public async Task<ActionResult<IEnumerable<Comment>>> GetAll()
+    public async Task<ActionResult<IEnumerable<Comment>>> GetAllComments()
     {
         var comments = await _repository.GetAllAsync();
         return Ok(comments);
@@ -27,7 +27,7 @@ public class CommentsController : ControllerBase
 
     // GET: /api/comments/{id}
     [HttpGet("{id}")]
-    public async Task<ActionResult<Comment>> GetById(int id)
+    public async Task<ActionResult<Comment>> GetCommentById(int id)
     {
         var comment = await _repository.GetByIdAsync(id);
         if (comment == null)
@@ -37,13 +37,9 @@ public class CommentsController : ControllerBase
         return Ok(comment);
     }
 
-    // GET: /api/posts/{postId}/comments
-
-    // POST: /api/posts/{postId}/comments
-
     // PUT: /api/comments/{id}
     [HttpPut("{id}")]
-    public async Task<IActionResult> Update(int id, [FromBody] UpdateCommentDto updateCommentDto)
+    public async Task<IActionResult> UpdateComment(int id, [FromBody] UpdateCommentDto updateCommentDto)
     {
         var comment = await _repository.GetByIdAsync(id);
         if (comment == null)
@@ -58,7 +54,7 @@ public class CommentsController : ControllerBase
 
     // PATCH: api/comments/{id}
     [HttpPatch("{id}")]
-    public async Task<IActionResult> Patch(int id, [FromBody] JsonPatchDocument<Comment> patchDoc)
+    public async Task<IActionResult> PatchComment(int id, [FromBody] JsonPatchDocument<Comment> patchDoc)
     {
         if (patchDoc == null)
         {
@@ -83,7 +79,7 @@ public class CommentsController : ControllerBase
 
     // DELETE: api/comments/{id}
     [HttpDelete("{id}")]
-    public async Task<IActionResult> Delete(int id)
+    public async Task<IActionResult> DeleteComment(int id)
     {
         var deleted = await _repository.DeleteAsync(id);
         if (!deleted)

@@ -47,9 +47,9 @@ public class CommentRepository : ICommentRepository
         return comment;
     }
 
-    public async Task<ICollection<Comment>?> GetByPostAsync(Post post)
+    public async Task<ICollection<Comment>?> GetByPostIdAsync(int postId)
     {
-        return await _context.Comments.Where(c => c.PostId == post.Id).ToListAsync();
+        return await _context.Comments.Where(c => c.PostId == postId).ToListAsync();
     }
 
     public async Task<Comment?> UpdateAsync(Comment comment)
