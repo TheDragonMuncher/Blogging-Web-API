@@ -8,8 +8,8 @@ public class AppDbContext: DbContext
 {
     public AppDbContext(DbContextOptions<AppDbContext> options) : base(options) { }
 
-    DbSet<Post> Posts;
-    DbSet<Comment> Comments;
+    public DbSet<Post> Posts;
+    public DbSet<Comment> Comments;
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
