@@ -24,5 +24,7 @@ public class Comment
 
     public DateTime CreatedAt { get; set; } = DateTime.UtcNow;
 
+    public DateTime? UpdatedAt { get; set; }
+
     public Post? Post { get; set; }
 }
