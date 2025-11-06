@@ -12,6 +12,8 @@
     <PackageReference Include="Microsoft.EntityFrameworkCore" Version="9.0.10"/>
     <PackageReference Include="Microsoft.AspNetCore.JsonPatch" Version="9.0.10"/>
     <PackageReference Include="Microsoft.AspNet.Mvc" Version="5.3.0"/>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="9.0.10"/>
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.NewtonsoftJson" Version="9.0.10"/>
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Blogging-Web-API.Core\Blogging-Web-API.Core.csproj"/>
