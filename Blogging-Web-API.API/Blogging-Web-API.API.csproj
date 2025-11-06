@@ -1,19 +1,20 @@
 <Project Sdk="Microsoft.NET.Sdk.Web">
-
   <PropertyGroup>
     <TargetFramework>net9.0</TargetFramework>
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
     <RootNamespace>Blogging_Web_API.API</RootNamespace>
   </PropertyGroup>
-
   <ItemGroup>
-    <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="9.0.4" />
+    <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="9.0.4"/>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="9.0.10"/>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="9.0.10"/>
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="9.0.10"/>
+    <PackageReference Include="Microsoft.AspNetCore.JsonPatch" Version="9.0.10"/>
+    <PackageReference Include="Microsoft.AspNet.Mvc" Version="5.3.0"/>
   </ItemGroup>
-
   <ItemGroup>
-    <ProjectReference Include="..\Blogging-Web-API.Core\Blogging-Web-API.Core.csproj" />
-    <ProjectReference Include="..\Blogging-Web-API.Infrastructure\Blogging-Web-API.Infrastructure.csproj" />
+    <ProjectReference Include="..\Blogging-Web-API.Core\Blogging-Web-API.Core.csproj"/>
+    <ProjectReference Include="..\Blogging-Web-API.Infrastructure\Blogging-Web-API.Infrastructure.csproj"/>
   </ItemGroup>
-
 </Project>

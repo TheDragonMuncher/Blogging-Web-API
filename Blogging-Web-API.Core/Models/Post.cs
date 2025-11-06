@@ -1,5 +1,4 @@
 using System.ComponentModel.DataAnnotations;
-using System.Transactions;
 
 namespace Blogging_Web_API.Core.Models;
 
@@ -15,7 +14,7 @@ public class Post
     public string Content { get; set; } = string.Empty;
 
     [Required]
-    public string Author { get; set; } = "Author";
+    public string Author { get; set; } = String.Empty;
 
     public DateTime CreatedAt { get; set; } = DateTime.UtcNow;
 
