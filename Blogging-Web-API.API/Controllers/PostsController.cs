@@ -91,7 +91,7 @@ public class PostsController : ControllerBase
         {
             return NotFound(new { message = $"Post by Id: {id} not found" });
         }
-        patchDoc.ApplyTo(post, (Microsoft.AspNetCore.JsonPatch.Adapters.IObjectAdapter)ModelState);
+        patchDoc.ApplyTo(post, ModelState);
 
         if (!ModelState.IsValid)
         {

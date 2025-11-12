@@ -3,7 +3,6 @@ using Blogging_Web_API.Core.Interfaces;
 using Blogging_Web_API.Core.Models;
 using Microsoft.AspNetCore.JsonPatch;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.CodeAnalysis;
 
 namespace Blogging_Web_API.API.Controllers;
 
@@ -66,7 +65,7 @@ public class CommentsController : ControllerBase
         {
             return NotFound(new { message = $"Comment by Id: {id} not found" });
         }
-        patchDoc.ApplyTo(comment, (Microsoft.AspNetCore.JsonPatch.Adapters.IObjectAdapter)ModelState);
+        patchDoc.ApplyTo(comment, ModelState);
 
         if (!ModelState.IsValid)
         {
