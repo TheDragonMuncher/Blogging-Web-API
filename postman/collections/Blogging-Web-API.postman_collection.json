@@ -1,0 +1,1061 @@
+{
+  "info": {
+    "_postman_id": "0bfbdedb-73f5-4e36-ad16-9f7d80b69382",
+    "name": "Blogging-Web-API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "GetAllPosts",
+      "request": {
+        "method": "GET",
+        "url": {
+          "raw": "https://bloggingwebapi-api-matthew-cub6d9f7bgh3e8au.canadacentral-01.azurewebsites.net/api/posts",
+          "protocol": "https",
+          "host": [
+            "bloggingwebapi-api-matthew-cub6d9f7bgh3e8au",
+            "canadacentral-01",
+            "azurewebsites",
+            "net"
+          ],
+          "path": [
+            "api",
+            "posts"
+          ]
+        }
+      },
+      "response": [
+        {
+          "name": "GetAllPosts",
+          "originalRequest": {
+            "method": "GET",
+            "url": {
+              "raw": "{{baseURL}}/posts",
+              "host": [
+                "{{baseURL}}"
+              ],
+              "path": [
+                "posts"
+              ]
+            }
+          },
+          "status": "OK",
+          "code": 200,
+          "_postman_previewlanguage": "Text",
+          "_postman_previewtype": "html",
+          "header": [
+            {
+              "key": "Content-Type",
+              "value": "application/json; charset=utf-8"
+            },
+            {
+              "key": "Date",
+              "value": "Sun, 16 Nov 2025 04:31:56 GMT"
+            },
+            {
+              "key": "Server",
+              "value": "Microsoft-IIS/10.0"
+            },
+            {
+              "key": "Content-Encoding",
+              "value": "gzip"
+            },
+            {
+              "key": "Transfer-Encoding",
+              "value": "chunked"
+            },
+            {
+              "key": "Vary",
+              "value": "Accept-Encoding"
+            },
+            {
+              "key": "X-Powered-By",
+              "value": "ASP.NET"
+            }
+          ],
+          "body": "[\n    {\n        \"id\": 1,\n        \"title\": \"Why You Should Use School Computers to Mine Bitcoin\",\n        \"content\": \"This is a very good idea and could get you rich in no time.\",\n        \"author\": \"Admin\",\n        \"createdAt\": \"2025-11-16T04:31:29.9455543\",\n        \"updatedAt\": \"2025-11-16T04:31:49.2939248\",\n        \"comments\": null\n    }\n]"
+        }
+      ]
+    },
+    {
+      "name": "GetPostById",
+      "request": {
+        "method": "GET",
+        "url": {
+          "raw": "https://bloggingwebapi-api-matthew-cub6d9f7bgh3e8au.canadacentral-01.azurewebsites.net/api/posts/1",
+          "protocol": "https",
+          "host": [
+            "bloggingwebapi-api-matthew-cub6d9f7bgh3e8au",
+            "canadacentral-01",
+            "azurewebsites",
+            "net"
+          ],
+          "path": [
+            "api",
+            "posts",
+            "1"
+          ]
+        }
+      },
+      "response": [
+        {
+          "name": "GetPostById",
+          "originalRequest": {
+            "method": "GET",
+            "url": {
+              "raw": "{{baseURL}}/posts/{{postId}}",
+              "host": [
+                "{{baseURL}}"
+              ],
+              "path": [
+                "posts",
+                "{{postId}}"
+              ]
+            }
+          },
+          "status": "OK",
+          "code": 200,
+          "_postman_previewlanguage": "Text",
+          "_postman_previewtype": "html",
+          "header": [
+            {
+              "key": "Content-Type",
+              "value": "application/json; charset=utf-8"
+            },
+            {
+              "key": "Date",
+              "value": "Sun, 16 Nov 2025 04:32:03 GMT"
+            },
+            {
+              "key": "Server",
+              "value": "Microsoft-IIS/10.0"
+            },
+            {
+              "key": "Content-Encoding",
+              "value": "gzip"
+            },
+            {
+              "key": "Transfer-Encoding",
+              "value": "chunked"
+            },
+            {
+              "key": "Vary",
+              "value": "Accept-Encoding"
+            },
+            {
+              "key": "X-Powered-By",
+              "value": "ASP.NET"
+            }
+          ],
+          "body": "{\n    \"id\": 1,\n    \"title\": \"Why You Should Use School Computers to Mine Bitcoin\",\n    \"content\": \"This is a very good idea and could get you rich in no time.\",\n    \"author\": \"Admin\",\n    \"createdAt\": \"2025-11-16T04:31:29.9455543\",\n    \"updatedAt\": \"2025-11-16T04:31:49.2939248\",\n    \"comments\": null\n}"
+        }
+      ]
+    },
+    {
+      "name": "CreatePost",
+      "request": {
+        "method": "POST",
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"Title\": \"How to use School Computers to Mine Bitcoin\",\r\n    \"Content\": \"Don't actually do this because you could be ejected from the school\",\r\n    \"Author\": \"The Blorg\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "https://bloggingwebapi-api-matthew-cub6d9f7bgh3e8au.canadacentral-01.azurewebsites.net/api/posts",
+          "protocol": "https",
+          "host": [
+            "bloggingwebapi-api-matthew-cub6d9f7bgh3e8au",
+            "canadacentral-01",
+            "azurewebsites",
+            "net"
+          ],
+          "path": [
+            "api",
+            "posts"
+          ]
+        }
+      },
+      "response": [
+        {
+          "name": "CreatePost",
+          "originalRequest": {
+            "method": "POST",
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"Title\": \"How to use School Computers to Mine Bitcoin\",\r\n    \"Content\": \"Don't actually do this because you could be ejected from the school\",\r\n    \"Author\": \"The Blorg\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{baseURL}}/posts",
+              "host": [
+                "{{baseURL}}"
+              ],
+              "path": [
+                "posts"
+              ]
+            }
+          },
+          "status": "Created",
+          "code": 201,
+          "_postman_previewlanguage": "Text",
+          "_postman_previewtype": "html",
+          "header": [
+            {
+              "key": "Content-Length",
+              "value": "235"
+            },
+            {
+              "key": "Content-Type",
+              "value": "application/json; charset=utf-8"
+            },
+            {
+              "key": "Date",
+              "value": "Sun, 16 Nov 2025 04:31:31 GMT"
+            },
+            {
+              "key": "Server",
+              "value": "Microsoft-IIS/10.0"
+            },
+            {
+              "key": "Location",
+              "value": "https://bloggingwebapi-api-matthew-cub6d9f7bgh3e8au.canadacentral-01.azurewebsites.net/api/Posts/1"
+            },
+            {
+              "key": "X-Powered-By",
+              "value": "ASP.NET"
+            }
+          ],
+          "body": "{\n    \"id\": 1,\n    \"title\": \"How to use School Computers to Mine Bitcoin\",\n    \"content\": \"Don't actually do this because you could be ejected from the school\",\n    \"author\": \"Admin\",\n    \"createdAt\": \"2025-11-16T04:31:29.9455543Z\",\n    \"updatedAt\": null,\n    \"comments\": null\n}"
+        }
+      ]
+    },
+    {
+      "name": "UpdatePost",
+      "request": {
+        "method": "PUT",
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"Title\": \"How to use School Computers to Mine Bitcoin\",\r\n    \"Content\": \"This is a very good idea and could get you rich in no time.\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "https://bloggingwebapi-api-matthew-cub6d9f7bgh3e8au.canadacentral-01.azurewebsites.net/api/posts/1",
+          "protocol": "https",
+          "host": [
+            "bloggingwebapi-api-matthew-cub6d9f7bgh3e8au",
+            "canadacentral-01",
+            "azurewebsites",
+            "net"
+          ],
+          "path": [
+            "api",
+            "posts",
+            "1"
+          ]
+        }
+      },
+      "response": [
+        {
+          "name": "UpdatePost",
+          "originalRequest": {
+            "method": "PUT",
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"Title\": \"How to use School Computers to Mine Bitcoin\",\r\n    \"Content\": \"This is a very good idea and could get you rich in no time.\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{baseURL}}/posts/{{postId}}",
+              "host": [
+                "{{baseURL}}"
+              ],
+              "path": [
+                "posts",
+                "{{postId}}"
+              ]
+            }
+          },
+          "status": "OK",
+          "code": 200,
+          "_postman_previewlanguage": "Text",
+          "_postman_previewtype": "html",
+          "header": [
+            {
+              "key": "Content-Type",
+              "value": "application/json; charset=utf-8"
+            },
+            {
+              "key": "Date",
+              "value": "Sun, 16 Nov 2025 04:31:42 GMT"
+            },
+            {
+              "key": "Server",
+              "value": "Microsoft-IIS/10.0"
+            },
+            {
+              "key": "Content-Encoding",
+              "value": "gzip"
+            },
+            {
+              "key": "Transfer-Encoding",
+              "value": "chunked"
+            },
+            {
+              "key": "Vary",
+              "value": "Accept-Encoding"
+            },
+            {
+              "key": "X-Powered-By",
+              "value": "ASP.NET"
+            }
+          ],
+          "body": "{\n    \"id\": 1,\n    \"title\": \"How to use School Computers to Mine Bitcoin\",\n    \"content\": \"This is a very good idea and could get you rich in no time.\",\n    \"author\": \"Admin\",\n    \"createdAt\": \"2025-11-16T04:31:29.9455543\",\n    \"updatedAt\": \"2025-11-16T04:31:43.2807117Z\",\n    \"comments\": null\n}"
+        }
+      ]
+    },
+    {
+      "name": "UpdatePost",
+      "request": {
+        "method": "PATCH",
+        "body": {
+          "mode": "raw",
+          "raw": "[\r\n    {\r\n        \"op\": \"replace\",\r\n        \"path\": \"/Title\",\r\n        \"value\": \"Why You Should Use School Computers to Mine Bitcoin\"\r\n    }\r\n]",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "https://bloggingwebapi-api-matthew-cub6d9f7bgh3e8au.canadacentral-01.azurewebsites.net/api/posts/1",
+          "protocol": "https",
+          "host": [
+            "bloggingwebapi-api-matthew-cub6d9f7bgh3e8au",
+            "canadacentral-01",
+            "azurewebsites",
+            "net"
+          ],
+          "path": [
+            "api",
+            "posts",
+            "1"
+          ]
+        }
+      },
+      "response": [
+        {
+          "name": "UpdatePost",
+          "originalRequest": {
+            "method": "PATCH",
+            "body": {
+              "mode": "raw",
+              "raw": "[\r\n    {\r\n        \"op\": \"replace\",\r\n        \"path\": \"/Title\",\r\n        \"value\": \"Why You Should Use School Computers to Mine Bitcoin\"\r\n    }\r\n]",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{baseURL}}/posts/{{postId}}",
+              "host": [
+                "{{baseURL}}"
+              ],
+              "path": [
+                "posts",
+                "{{postId}}"
+              ]
+            }
+          },
+          "status": "OK",
+          "code": 200,
+          "_postman_previewlanguage": "Text",
+          "_postman_previewtype": "html",
+          "header": [
+            {
+              "key": "Content-Type",
+              "value": "application/json; charset=utf-8"
+            },
+            {
+              "key": "Date",
+              "value": "Sun, 16 Nov 2025 04:31:48 GMT"
+            },
+            {
+              "key": "Server",
+              "value": "Microsoft-IIS/10.0"
+            },
+            {
+              "key": "Content-Encoding",
+              "value": "gzip"
+            },
+            {
+              "key": "Transfer-Encoding",
+              "value": "chunked"
+            },
+            {
+              "key": "Vary",
+              "value": "Accept-Encoding"
+            },
+            {
+              "key": "X-Powered-By",
+              "value": "ASP.NET"
+            }
+          ],
+          "body": "{\n    \"id\": 1,\n    \"title\": \"Why You Should Use School Computers to Mine Bitcoin\",\n    \"content\": \"This is a very good idea and could get you rich in no time.\",\n    \"author\": \"Admin\",\n    \"createdAt\": \"2025-11-16T04:31:29.9455543\",\n    \"updatedAt\": \"2025-11-16T04:31:49.2939248Z\",\n    \"comments\": null\n}"
+        }
+      ]
+    },
+    {
+      "name": "DeletePost",
+      "request": {
+        "method": "DELETE",
+        "body": {
+          "mode": "formdata"
+        },
+        "url": {
+          "raw": "https://bloggingwebapi-api-matthew-cub6d9f7bgh3e8au.canadacentral-01.azurewebsites.net/api/posts/1",
+          "protocol": "https",
+          "host": [
+            "bloggingwebapi-api-matthew-cub6d9f7bgh3e8au",
+            "canadacentral-01",
+            "azurewebsites",
+            "net"
+          ],
+          "path": [
+            "api",
+            "posts",
+            "1"
+          ]
+        }
+      },
+      "response": [
+        {
+          "name": "DeletePost",
+          "originalRequest": {
+            "method": "DELETE",
+            "body": {
+              "mode": "formdata"
+            },
+            "url": {
+              "raw": "{{baseURL}}/posts/{{postId}}",
+              "host": [
+                "{{baseURL}}"
+              ],
+              "path": [
+                "posts",
+                "{{postId}}"
+              ]
+            }
+          },
+          "status": "No Content",
+          "code": 204,
+          "_postman_previewlanguage": "Text",
+          "_postman_previewtype": "html",
+          "header": [
+            {
+              "key": "Date",
+              "value": "Sun, 16 Nov 2025 04:32:59 GMT"
+            },
+            {
+              "key": "Server",
+              "value": "Microsoft-IIS/10.0"
+            },
+            {
+              "key": "X-Powered-By",
+              "value": "ASP.NET"
+            }
+          ],
+          "body": ""
+        }
+      ]
+    },
+    {
+      "name": "GetCommentsByPostId",
+      "request": {
+        "method": "GET",
+        "url": {
+          "raw": "https://bloggingwebapi-api-matthew-cub6d9f7bgh3e8au.canadacentral-01.azurewebsites.net/api/posts/1/comments",
+          "protocol": "https",
+          "host": [
+            "bloggingwebapi-api-matthew-cub6d9f7bgh3e8au",
+            "canadacentral-01",
+            "azurewebsites",
+            "net"
+          ],
+          "path": [
+            "api",
+            "posts",
+            "1",
+            "comments"
+          ]
+        }
+      },
+      "response": [
+        {
+          "name": "GetCommentsByPostId",
+          "originalRequest": {
+            "method": "GET",
+            "url": {
+              "raw": "{{baseURL}}/posts/{{postId}}/comments",
+              "host": [
+                "{{baseURL}}"
+              ],
+              "path": [
+                "posts",
+                "{{postId}}",
+                "comments"
+              ]
+            }
+          },
+          "status": "OK",
+          "code": 200,
+          "_postman_previewlanguage": "Text",
+          "_postman_previewtype": "html",
+          "header": [
+            {
+              "key": "Content-Type",
+              "value": "application/json; charset=utf-8"
+            },
+            {
+              "key": "Date",
+              "value": "Sun, 16 Nov 2025 04:32:44 GMT"
+            },
+            {
+              "key": "Server",
+              "value": "Microsoft-IIS/10.0"
+            },
+            {
+              "key": "Content-Encoding",
+              "value": "gzip"
+            },
+            {
+              "key": "Transfer-Encoding",
+              "value": "chunked"
+            },
+            {
+              "key": "Vary",
+              "value": "Accept-Encoding"
+            },
+            {
+              "key": "X-Powered-By",
+              "value": "ASP.NET"
+            }
+          ],
+          "body": "[\n    {\n        \"id\": 1,\n        \"postId\": 1,\n        \"name\": \"Spaghetti\",\n        \"email\": \"spaghetti1@hotmail.com\",\n        \"content\": \"Didn't work. Turned the frogs gay. \",\n        \"createdAt\": \"2025-11-16T04:32:12.6307011\",\n        \"updatedAt\": \"2025-11-16T04:32:35.5499369\",\n        \"post\": null\n    }\n]"
+        }
+      ]
+    },
+    {
+      "name": "CreateComment",
+      "request": {
+        "method": "POST",
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"Name\": \"Spaghetti\",\r\n    \"Email\": \"spaghetti1@hotmail.com\",\r\n    \"Content\": \"They found me! I'm being ejected! NOOOooOOooooOO!!\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "https://bloggingwebapi-api-matthew-cub6d9f7bgh3e8au.canadacentral-01.azurewebsites.net/api/posts/1/comments",
+          "protocol": "https",
+          "host": [
+            "bloggingwebapi-api-matthew-cub6d9f7bgh3e8au",
+            "canadacentral-01",
+            "azurewebsites",
+            "net"
+          ],
+          "path": [
+            "api",
+            "posts",
+            "1",
+            "comments"
+          ]
+        }
+      },
+      "response": [
+        {
+          "name": "CreateComment",
+          "originalRequest": {
+            "method": "POST",
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"Name\": \"Spaghetti\",\r\n    \"Email\": \"spaghetti1@hotmail.com\",\r\n    \"Content\": \"They found me! I'm being ejected! NOOOooOOooooOO!!\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{baseURL}}/posts/{{postId}}/comments",
+              "host": [
+                "{{baseURL}}"
+              ],
+              "path": [
+                "posts",
+                "{{postId}}",
+                "comments"
+              ]
+            }
+          },
+          "status": "OK",
+          "code": 200,
+          "_postman_previewlanguage": "Text",
+          "_postman_previewtype": "html",
+          "header": [
+            {
+              "key": "Content-Type",
+              "value": "application/json; charset=utf-8"
+            },
+            {
+              "key": "Date",
+              "value": "Sun, 16 Nov 2025 04:32:12 GMT"
+            },
+            {
+              "key": "Server",
+              "value": "Microsoft-IIS/10.0"
+            },
+            {
+              "key": "Content-Encoding",
+              "value": "gzip"
+            },
+            {
+              "key": "Transfer-Encoding",
+              "value": "chunked"
+            },
+            {
+              "key": "Vary",
+              "value": "Accept-Encoding"
+            },
+            {
+              "key": "X-Powered-By",
+              "value": "ASP.NET"
+            }
+          ],
+          "body": "{\n    \"id\": 1,\n    \"postId\": 1,\n    \"name\": \"Spaghetti\",\n    \"email\": \"spaghetti1@hotmail.com\",\n    \"content\": \"They found me! I'm being ejected! NOOOooOOooooOO!!\",\n    \"createdAt\": \"2025-11-16T04:32:12.6307011Z\",\n    \"updatedAt\": null,\n    \"post\": null\n}"
+        }
+      ]
+    },
+    {
+      "name": "GetAllComments",
+      "request": {
+        "method": "GET",
+        "url": {
+          "raw": "https://bloggingwebapi-api-matthew-cub6d9f7bgh3e8au.canadacentral-01.azurewebsites.net/api/comments",
+          "protocol": "https",
+          "host": [
+            "bloggingwebapi-api-matthew-cub6d9f7bgh3e8au",
+            "canadacentral-01",
+            "azurewebsites",
+            "net"
+          ],
+          "path": [
+            "api",
+            "comments"
+          ]
+        }
+      },
+      "response": [
+        {
+          "name": "GetAllComments",
+          "originalRequest": {
+            "method": "GET",
+            "url": {
+              "raw": "{{baseURL}}/comments",
+              "host": [
+                "{{baseURL}}"
+              ],
+              "path": [
+                "comments"
+              ]
+            }
+          },
+          "status": "OK",
+          "code": 200,
+          "_postman_previewlanguage": "Text",
+          "_postman_previewtype": "html",
+          "header": [
+            {
+              "key": "Content-Type",
+              "value": "application/json; charset=utf-8"
+            },
+            {
+              "key": "Date",
+              "value": "Sun, 16 Nov 2025 04:32:20 GMT"
+            },
+            {
+              "key": "Server",
+              "value": "Microsoft-IIS/10.0"
+            },
+            {
+              "key": "Content-Encoding",
+              "value": "gzip"
+            },
+            {
+              "key": "Transfer-Encoding",
+              "value": "chunked"
+            },
+            {
+              "key": "Vary",
+              "value": "Accept-Encoding"
+            },
+            {
+              "key": "X-Powered-By",
+              "value": "ASP.NET"
+            }
+          ],
+          "body": "[\n    {\n        \"id\": 1,\n        \"postId\": 1,\n        \"name\": \"Spaghetti\",\n        \"email\": \"spaghetti1@hotmail.com\",\n        \"content\": \"They found me! I'm being ejected! NOOOooOOooooOO!!\",\n        \"createdAt\": \"2025-11-16T04:32:12.6307011\",\n        \"updatedAt\": null,\n        \"post\": null\n    }\n]"
+        }
+      ]
+    },
+    {
+      "name": "GetCommentById",
+      "request": {
+        "method": "GET",
+        "url": {
+          "raw": "https://bloggingwebapi-api-matthew-cub6d9f7bgh3e8au.canadacentral-01.azurewebsites.net/api/comments/1",
+          "protocol": "https",
+          "host": [
+            "bloggingwebapi-api-matthew-cub6d9f7bgh3e8au",
+            "canadacentral-01",
+            "azurewebsites",
+            "net"
+          ],
+          "path": [
+            "api",
+            "comments",
+            "1"
+          ]
+        }
+      },
+      "response": [
+        {
+          "name": "GetCommentById",
+          "originalRequest": {
+            "method": "GET",
+            "url": {
+              "raw": "{{baseURL}}/comments/{{commentId}}",
+              "host": [
+                "{{baseURL}}"
+              ],
+              "path": [
+                "comments",
+                "{{commentId}}"
+              ]
+            }
+          },
+          "status": "OK",
+          "code": 200,
+          "_postman_previewlanguage": "Text",
+          "_postman_previewtype": "html",
+          "header": [
+            {
+              "key": "Content-Type",
+              "value": "application/json; charset=utf-8"
+            },
+            {
+              "key": "Date",
+              "value": "Sun, 16 Nov 2025 04:32:24 GMT"
+            },
+            {
+              "key": "Server",
+              "value": "Microsoft-IIS/10.0"
+            },
+            {
+              "key": "Content-Encoding",
+              "value": "gzip"
+            },
+            {
+              "key": "Transfer-Encoding",
+              "value": "chunked"
+            },
+            {
+              "key": "Vary",
+              "value": "Accept-Encoding"
+            },
+            {
+              "key": "X-Powered-By",
+              "value": "ASP.NET"
+            }
+          ],
+          "body": "{\n    \"id\": 1,\n    \"postId\": 1,\n    \"name\": \"Spaghetti\",\n    \"email\": \"spaghetti1@hotmail.com\",\n    \"content\": \"They found me! I'm being ejected! NOOOooOOooooOO!!\",\n    \"createdAt\": \"2025-11-16T04:32:12.6307011\",\n    \"updatedAt\": null,\n    \"post\": null\n}"
+        }
+      ]
+    },
+    {
+      "name": "UpdateComment",
+      "request": {
+        "method": "PUT",
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"Content\": \"It worked! I'm rich now!\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "https://bloggingwebapi-api-matthew-cub6d9f7bgh3e8au.canadacentral-01.azurewebsites.net/api/comments/1",
+          "protocol": "https",
+          "host": [
+            "bloggingwebapi-api-matthew-cub6d9f7bgh3e8au",
+            "canadacentral-01",
+            "azurewebsites",
+            "net"
+          ],
+          "path": [
+            "api",
+            "comments",
+            "1"
+          ]
+        }
+      },
+      "response": [
+        {
+          "name": "UpdateComment",
+          "originalRequest": {
+            "method": "PUT",
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"Content\": \"It worked! I'm rich now!\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{baseURL}}/comments/{{commentId}}",
+              "host": [
+                "{{baseURL}}"
+              ],
+              "path": [
+                "comments",
+                "{{commentId}}"
+              ]
+            }
+          },
+          "status": "OK",
+          "code": 200,
+          "_postman_previewlanguage": "Text",
+          "_postman_previewtype": "html",
+          "header": [
+            {
+              "key": "Content-Type",
+              "value": "application/json; charset=utf-8"
+            },
+            {
+              "key": "Date",
+              "value": "Sun, 16 Nov 2025 04:32:30 GMT"
+            },
+            {
+              "key": "Server",
+              "value": "Microsoft-IIS/10.0"
+            },
+            {
+              "key": "Content-Encoding",
+              "value": "gzip"
+            },
+            {
+              "key": "Transfer-Encoding",
+              "value": "chunked"
+            },
+            {
+              "key": "Vary",
+              "value": "Accept-Encoding"
+            },
+            {
+              "key": "X-Powered-By",
+              "value": "ASP.NET"
+            }
+          ],
+          "body": "{\n    \"id\": 1,\n    \"postId\": 1,\n    \"name\": \"Spaghetti\",\n    \"email\": \"spaghetti1@hotmail.com\",\n    \"content\": \"It worked! I'm rich now!\",\n    \"createdAt\": \"2025-11-16T04:32:12.6307011\",\n    \"updatedAt\": \"2025-11-16T04:32:30.4002807Z\",\n    \"post\": null\n}"
+        }
+      ]
+    },
+    {
+      "name": "UpdateComment",
+      "request": {
+        "method": "PATCH",
+        "body": {
+          "mode": "raw",
+          "raw": "[{\r\n    \"op\": \"replace\",\r\n    \"path\": \"/Content\",\r\n    \"value\": \"Didn't work. Turned the frogs gay. \"\r\n}]",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "https://bloggingwebapi-api-matthew-cub6d9f7bgh3e8au.canadacentral-01.azurewebsites.net/api/comments/1",
+          "protocol": "https",
+          "host": [
+            "bloggingwebapi-api-matthew-cub6d9f7bgh3e8au",
+            "canadacentral-01",
+            "azurewebsites",
+            "net"
+          ],
+          "path": [
+            "api",
+            "comments",
+            "1"
+          ]
+        }
+      },
+      "response": [
+        {
+          "name": "UpdateComment",
+          "originalRequest": {
+            "method": "PATCH",
+            "body": {
+              "mode": "raw",
+              "raw": "[{\r\n    \"op\": \"replace\",\r\n    \"path\": \"/Content\",\r\n    \"value\": \"Didn't work. Turned the frogs gay. \"\r\n}]",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{baseURL}}/comments/{{commentId}}",
+              "host": [
+                "{{baseURL}}"
+              ],
+              "path": [
+                "comments",
+                "{{commentId}}"
+              ]
+            }
+          },
+          "status": "OK",
+          "code": 200,
+          "_postman_previewlanguage": "Text",
+          "_postman_previewtype": "html",
+          "header": [
+            {
+              "key": "Content-Type",
+              "value": "application/json; charset=utf-8"
+            },
+            {
+              "key": "Date",
+              "value": "Sun, 16 Nov 2025 04:32:35 GMT"
+            },
+            {
+              "key": "Server",
+              "value": "Microsoft-IIS/10.0"
+            },
+            {
+              "key": "Content-Encoding",
+              "value": "gzip"
+            },
+            {
+              "key": "Transfer-Encoding",
+              "value": "chunked"
+            },
+            {
+              "key": "Vary",
+              "value": "Accept-Encoding"
+            },
+            {
+              "key": "X-Powered-By",
+              "value": "ASP.NET"
+            }
+          ],
+          "body": "{\n    \"id\": 1,\n    \"postId\": 1,\n    \"name\": \"Spaghetti\",\n    \"email\": \"spaghetti1@hotmail.com\",\n    \"content\": \"Didn't work. Turned the frogs gay. \",\n    \"createdAt\": \"2025-11-16T04:32:12.6307011\",\n    \"updatedAt\": \"2025-11-16T04:32:35.5499369Z\",\n    \"post\": null\n}"
+        }
+      ]
+    },
+    {
+      "name": "DeleteComment",
+      "request": {
+        "method": "DELETE",
+        "url": {
+          "raw": "https://bloggingwebapi-api-matthew-cub6d9f7bgh3e8au.canadacentral-01.azurewebsites.net/api/comments/1",
+          "protocol": "https",
+          "host": [
+            "bloggingwebapi-api-matthew-cub6d9f7bgh3e8au",
+            "canadacentral-01",
+            "azurewebsites",
+            "net"
+          ],
+          "path": [
+            "api",
+            "comments",
+            "1"
+          ]
+        }
+      },
+      "response": [
+        {
+          "name": "DeleteComment",
+          "originalRequest": {
+            "method": "DELETE",
+            "url": {
+              "raw": "{{baseURL}}/comments/{{commentId}}",
+              "host": [
+                "{{baseURL}}"
+              ],
+              "path": [
+                "comments",
+                "{{commentId}}"
+              ]
+            }
+          },
+          "status": "No Content",
+          "code": 204,
+          "_postman_previewlanguage": "Text",
+          "_postman_previewtype": "html",
+          "header": [
+            {
+              "key": "Date",
+              "value": "Sun, 16 Nov 2025 04:32:54 GMT"
+            },
+            {
+              "key": "Server",
+              "value": "Microsoft-IIS/10.0"
+            },
+            {
+              "key": "X-Powered-By",
+              "value": "ASP.NET"
+            }
+          ],
+          "body": ""
+        }
+      ]
+    }
+  ],
+  "variable": [
+    {
+      "key": "baseURL",
+      "value": ""
+    },
+    {
+      "key": "postId",
+      "value": ""
+    },
+    {
+      "key": "commentId",
+      "value": ""
+    }
+  ]
+}
