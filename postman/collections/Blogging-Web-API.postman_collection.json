@@ -30,9 +30,9 @@
           "originalRequest": {
             "method": "GET",
             "url": {
-              "raw": "{{baseURL}}/posts",
+              "raw": "https://bloggingwebapi-api-matthew-cub6d9f7bgh3e8au.canadacentral-01.azurewebsites.net/api/posts",
               "host": [
-                "{{baseURL}}"
+                "https://bloggingwebapi-api-matthew-cub6d9f7bgh3e8au.canadacentral-01.azurewebsites.net/api"
               ],
               "path": [
                 "posts"
@@ -103,13 +103,13 @@
           "originalRequest": {
             "method": "GET",
             "url": {
-              "raw": "{{baseURL}}/posts/{{postId}}",
+              "raw": "https://bloggingwebapi-api-matthew-cub6d9f7bgh3e8au.canadacentral-01.azurewebsites.net/api/posts/1",
               "host": [
-                "{{baseURL}}"
+                "https://bloggingwebapi-api-matthew-cub6d9f7bgh3e8au.canadacentral-01.azurewebsites.net/api"
               ],
               "path": [
                 "posts",
-                "{{postId}}"
+                "1"
               ]
             }
           },
@@ -194,9 +194,9 @@
               }
             },
             "url": {
-              "raw": "{{baseURL}}/posts",
+              "raw": "https://bloggingwebapi-api-matthew-cub6d9f7bgh3e8au.canadacentral-01.azurewebsites.net/api/posts",
               "host": [
-                "{{baseURL}}"
+                "https://bloggingwebapi-api-matthew-cub6d9f7bgh3e8au.canadacentral-01.azurewebsites.net/api"
               ],
               "path": [
                 "posts"
@@ -281,13 +281,13 @@
               }
             },
             "url": {
-              "raw": "{{baseURL}}/posts/{{postId}}",
+              "raw": "https://bloggingwebapi-api-matthew-cub6d9f7bgh3e8au.canadacentral-01.azurewebsites.net/api/posts/1",
               "host": [
-                "{{baseURL}}"
+                "https://bloggingwebapi-api-matthew-cub6d9f7bgh3e8au.canadacentral-01.azurewebsites.net/api"
               ],
               "path": [
                 "posts",
-                "{{postId}}"
+                "1"
               ]
             }
           },
@@ -373,13 +373,13 @@
               }
             },
             "url": {
-              "raw": "{{baseURL}}/posts/{{postId}}",
+              "raw": "https://bloggingwebapi-api-matthew-cub6d9f7bgh3e8au.canadacentral-01.azurewebsites.net/api/posts/1",
               "host": [
-                "{{baseURL}}"
+                "https://bloggingwebapi-api-matthew-cub6d9f7bgh3e8au.canadacentral-01.azurewebsites.net/api"
               ],
               "path": [
                 "posts",
-                "{{postId}}"
+                "1"
               ]
             }
           },
@@ -453,13 +453,13 @@
               "mode": "formdata"
             },
             "url": {
-              "raw": "{{baseURL}}/posts/{{postId}}",
+              "raw": "https://bloggingwebapi-api-matthew-cub6d9f7bgh3e8au.canadacentral-01.azurewebsites.net/api/posts/1",
               "host": [
-                "{{baseURL}}"
+                "https://bloggingwebapi-api-matthew-cub6d9f7bgh3e8au.canadacentral-01.azurewebsites.net/api"
               ],
               "path": [
                 "posts",
-                "{{postId}}"
+                "1"
               ]
             }
           },
@@ -512,13 +512,13 @@
           "originalRequest": {
             "method": "GET",
             "url": {
-              "raw": "{{baseURL}}/posts/{{postId}}/comments",
+              "raw": "https://bloggingwebapi-api-matthew-cub6d9f7bgh3e8au.canadacentral-01.azurewebsites.net/api/posts/1/comments",
               "host": [
-                "{{baseURL}}"
+                "https://bloggingwebapi-api-matthew-cub6d9f7bgh3e8au.canadacentral-01.azurewebsites.net/api"
               ],
               "path": [
                 "posts",
-                "{{postId}}",
+                "1",
                 "comments"
               ]
             }
@@ -606,13 +606,13 @@
               }
             },
             "url": {
-              "raw": "{{baseURL}}/posts/{{postId}}/comments",
+              "raw": "https://bloggingwebapi-api-matthew-cub6d9f7bgh3e8au.canadacentral-01.azurewebsites.net/api/posts/1/comments",
               "host": [
-                "{{baseURL}}"
+                "https://bloggingwebapi-api-matthew-cub6d9f7bgh3e8au.canadacentral-01.azurewebsites.net/api"
               ],
               "path": [
                 "posts",
-                "{{postId}}",
+                "1",
                 "comments"
               ]
             }
@@ -680,9 +680,9 @@
           "originalRequest": {
             "method": "GET",
             "url": {
-              "raw": "{{baseURL}}/comments",
+              "raw": "https://bloggingwebapi-api-matthew-cub6d9f7bgh3e8au.canadacentral-01.azurewebsites.net/api/comments",
               "host": [
-                "{{baseURL}}"
+                "https://bloggingwebapi-api-matthew-cub6d9f7bgh3e8au.canadacentral-01.azurewebsites.net/api"
               ],
               "path": [
                 "comments"
@@ -753,13 +753,13 @@
           "originalRequest": {
             "method": "GET",
             "url": {
-              "raw": "{{baseURL}}/comments/{{commentId}}",
+              "raw": "https://bloggingwebapi-api-matthew-cub6d9f7bgh3e8au.canadacentral-01.azurewebsites.net/api/comments/1",
               "host": [
-                "{{baseURL}}"
+                "https://bloggingwebapi-api-matthew-cub6d9f7bgh3e8au.canadacentral-01.azurewebsites.net/api"
               ],
               "path": [
                 "comments",
-                "{{commentId}}"
+                "1"
               ]
             }
           },
@@ -845,13 +845,13 @@
               }
             },
             "url": {
-              "raw": "{{baseURL}}/comments/{{commentId}}",
+              "raw": "https://bloggingwebapi-api-matthew-cub6d9f7bgh3e8au.canadacentral-01.azurewebsites.net/api/comments/1",
               "host": [
-                "{{baseURL}}"
+                "https://bloggingwebapi-api-matthew-cub6d9f7bgh3e8au.canadacentral-01.azurewebsites.net/api"
               ],
               "path": [
                 "comments",
-                "{{commentId}}"
+                "1"
               ]
             }
           },
@@ -937,13 +937,13 @@
               }
             },
             "url": {
-              "raw": "{{baseURL}}/comments/{{commentId}}",
+              "raw": "https://bloggingwebapi-api-matthew-cub6d9f7bgh3e8au.canadacentral-01.azurewebsites.net/api/comments/1",
               "host": [
-                "{{baseURL}}"
+                "https://bloggingwebapi-api-matthew-cub6d9f7bgh3e8au.canadacentral-01.azurewebsites.net/api"
               ],
               "path": [
                 "comments",
-                "{{commentId}}"
+                "1"
               ]
             }
           },
@@ -1011,13 +1011,13 @@
           "originalRequest": {
             "method": "DELETE",
             "url": {
-              "raw": "{{baseURL}}/comments/{{commentId}}",
+              "raw": "https://bloggingwebapi-api-matthew-cub6d9f7bgh3e8au.canadacentral-01.azurewebsites.net/api/comments/1",
               "host": [
-                "{{baseURL}}"
+                "https://bloggingwebapi-api-matthew-cub6d9f7bgh3e8au.canadacentral-01.azurewebsites.net/api"
               ],
               "path": [
                 "comments",
-                "{{commentId}}"
+                "1"
               ]
             }
           },
